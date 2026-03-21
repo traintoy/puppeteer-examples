@@ -46,6 +46,9 @@ You can run these scripts in the [puppeteer sandbox](https://puppeteersandbox.co
 - [5. parallel-pages](#5-parallel-pages)
   * [Screenshots parallel pages](#screenshots-parallel-pages)
   * [Screenshots parallel pages in batches](#screenshots-parallel-pages-in-batches)
+- [6. performance](#6-performance)
+  * [Performance metrics](#performance-metrics)
+  * [Network monitor](#network-monitor)
 - [a. mocha-tests](#a-mocha-tests)
   * [Alibaba product search](#alibaba-product-search)
   * [Amazon product search](#amazon-product-search)
@@ -215,6 +218,18 @@ parallel screenshotting of an array of Websites with small example
 
 
 [5. parallel-pages/screenshots_parallel_cologne_colleges.js](https://github.com/checkly/puppeteer-examples/blob/master/5.%20parallel-pages/screenshots_parallel_cologne_colleges.js)
+## 6. performance
+Measure and monitor real-world page performance using Puppeteer's request interception, the Navigation Timing API, and the Chrome DevTools Protocol.  
+### Performance metrics
+Navigates to a page and reports First Contentful Paint, DOM Content Loaded time, total page-load time, number of resources, and total bytes transferred.
+
+
+[6. performance/performance_metrics.js](https://github.com/traintoy/puppeteer-examples/blob/master/6.%20performance/performance_metrics.js)
+### Network monitor
+Intercepts every network request during a page load and prints a structured table showing method, HTTP status, resource type, response size (KB), and URL, finishing with request count and total bytes received.
+
+
+[6. performance/network_monitor.js](https://github.com/traintoy/puppeteer-examples/blob/master/6.%20performance/network_monitor.js)
 ## A. mocha-tests
 Mocha test runner scripts that use Puppeteer and the standard `assert` library to check specific properties and actions on a page. They can be executed like: 
 
